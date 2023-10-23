@@ -1,0 +1,78 @@
+name: flutter_study_app
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.0.0
+  get: ^4.6.5
+  smooth_page_indicator: ^1.1.0
+  liquid_swipe: ^3.1.0
+  otp_timer_button: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+          style: italic
+          weight: 700
+    - family: Roboto-SemiBold
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+  assets:
+    - assets/images/
+    - assets/images/splash_screen/
+    - assets/images/on_boarding_screen/
+    - assets/images/welcome_screen/
+    - assets/images/sign_in_screen/
+    - assets/icons/
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
