@@ -19,6 +19,7 @@ const darkColor200 = Color(0xFF757575);
 const darkColor100 = Color(0xFF999999);
 
 const blueColor = Color(0xFF5460F5);
+const blueAccent = Color(0xFF699BF7);
 const lightBlue = Color(0xFF90CAF9);
 const darkBlue = Color(0xFF0022BA);
 

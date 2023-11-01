@@ -19,3 +19,4 @@ const double bgWidth = 350.0;
 const double bgHeight = 720.0;
 
 const double defaultPaddingSize = 8.0;
+const double defaultHeight = 50.0;

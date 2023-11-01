@@ -31,6 +31,11 @@ const String txtPassword = "Password";
 const String txtConfirmPassword = "Confirm Password";
 const String txtContinue = "Continue";
 const String txtResend = "Resend";
+const String txtPython = "Python";
+const String txtJava = "Java";
+const String txtFlutter = "Flutter";
+const String txtGraphicDesign = "Design";
+const String txtArtificialIntelligence = "A.I";
 
 // Sign-In Screen
 const String txtSignInHeading = "Welcome.";
@@ -58,3 +63,9 @@ const String txtSignUpTitle = "A Journey will begin soon.";
 const String txtAcceptance = "I have read and accepted all  ";
 const String txtPrivacy = "Privacy policy & Term";
 const String txtSignUpFooter = "Already have an Account?  ";
+
+// Dash Board Screen
+const String txtLabel = "\\/iktor";
+const String txtGreeting = "Hello James,";
+const String txtSubGreeting = "What will you discover today?";
+const String txtSearch = "Search Course";
