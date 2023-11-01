@@ -21,10 +21,19 @@ const String imgWelcomeScreenBackgroundBlue = "assets/images/welcome_screen/welc
 const String imgWelcomeScreenImage = "assets/images/welcome_screen/welcome_screen_image.png";
 
 //Sign-In Screen
+const String imgForgotPassword = "assets/images/sign_in_screen/img_forgot_password.png";
+
+// Icons
 const String icGoogle = "assets/icons/ic_google.png";
 const String icFacebook = "assets/icons/ic_facebook.png";
 const String icLinkedin = "assets/icons/ic_linkedin.png";
 const String icEmail = "assets/icons/ic_email.png";
 const String icPassword = "assets/icons/ic_password.png";
 const String icShowPassword = "assets/icons/ic_show_password.png";
-const String imgForgotPassword = "assets/images/sign_in_screen/img_forgot_password.png";
+const String icPython = "assets/icons/ic_python.png";
+const String icJava = "assets/icons/ic_java.png";
+const String icFlutter = "assets/icons/ic_flutter.png";
+const String icGraphicDesign = "assets/icons/ic_graphic_design.png";
+const String icArtificialIntelligence = "assets/icons/ic_artificial_intelligence.png";
+
+
