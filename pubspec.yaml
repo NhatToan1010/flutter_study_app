@@ -44,6 +44,7 @@ flutter:
     - assets/images/on_boarding_screen/
     - assets/images/welcome_screen/
     - assets/images/sign_in_screen/
+    - assets/images/courses/
     - assets/icons/
 
   

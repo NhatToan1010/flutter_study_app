@@ -1,5 +1,32 @@
 import 'dart:ui';
 
+// Generic
+const String txtSignIn = "Sign-In";
+const String txtSignUp = "Sign Up";
+const String txtPhoneNo = "Phone No";
+const String txtEmail = "Email";
+const String txtUsername = "Username";
+const String txtEmailUsername = "Email / Username";
+const String txtPassword = "Password";
+const String txtConfirmPassword = "Confirm Password";
+const String txtContinue = "Continue";
+const String txtResend = "Resend";
+const String txtPython = "Python";
+const String txtJava = "Java";
+const String txtFlutter = "Flutter";
+const String txtGraphicDesign = "Design";
+const String txtArtificialIntelligence = "A.I";
+const String txtLessons = " Lessons";
+const String txtWeeks = " Weeks, ";
+const String txtBeginner = "Beginner";
+const String txtInternship = "Internship";
+const String txtExpert = "Expert";
+
+// Courses
+const String txtCoursePython = "Introduction to Python";
+const String txtCourseFlutter = "Introduction to Flutter";
+const String txtCourseArchitecture = "Architecture Design";
+
 //Splash Screen
 const String txtSplashScreenHeading = "Community\nbrings Victory";
 const String txtSplashScreenSubHeading= "Learn to Code\nwith us";
@@ -19,23 +46,6 @@ const String txtOnboardingButton = "Get Started";
 //Welcome Screen
 const String txtWelcomeScreenTitle = "Begin to Learn";
 const String txtWelcomeScreenBody = "Let’s put your creativity on the\ndevelopment highway.";
-
-// Generic
-const String txtSignIn = "Sign-In";
-const String txtSignUp = "Sign Up";
-const String txtPhoneNo = "Phone No";
-const String txtEmail = "Email";
-const String txtUsername = "Username";
-const String txtEmailUsername = "Email / Username";
-const String txtPassword = "Password";
-const String txtConfirmPassword = "Confirm Password";
-const String txtContinue = "Continue";
-const String txtResend = "Resend";
-const String txtPython = "Python";
-const String txtJava = "Java";
-const String txtFlutter = "Flutter";
-const String txtGraphicDesign = "Design";
-const String txtArtificialIntelligence = "A.I";
 
 // Sign-In Screen
 const String txtSignInHeading = "Welcome.";
@@ -69,3 +79,5 @@ const String txtLabel = "\\/iktor";
 const String txtGreeting = "Hello James,";
 const String txtSubGreeting = "What will you discover today?";
 const String txtSearch = "Search Course";
+const String txtPopularCourses = "Popular Courses";
+const String txtViewAll = "View All";

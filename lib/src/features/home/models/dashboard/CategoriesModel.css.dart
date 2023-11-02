@@ -5,3 +5,5 @@ class CategoriesModel {
   CategoriesModel({required this.image, required this.title});
 
 }
+
+
