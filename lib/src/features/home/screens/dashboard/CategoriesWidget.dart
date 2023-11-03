@@ -20,38 +20,40 @@ class CategoriesWidget extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         physics: const ClampingScrollPhysics(),
         itemCount: controller.dataTitle.length,
-        itemBuilder: (context, index) => Column(
-          children: [
-            // --- Categories Frame ---
-            Container(
-                margin: const EdgeInsets.only(right: 15.0),
-                width: 50,
-                height: 60,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: lightColor700,
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
-                        blurRadius: 5,
-                        offset: const Offset(5, 5))
-                  ],
-                ),
-                // --- Categories Icon ---
-                child: TextButton(
-                    onPressed: () {},
-                    child: Image(
-                        width: 40,
-                        height: 40,
-                        image: AssetImage(controller.dataImage[index])))),
-            const SizedBox(height: 5.0),
-            // --- Categories Title ---
-            Text(
-              controller.dataTitle[index],
-              style: const TextStyle(
-                  color: blueAccent, fontWeight: FontWeight.bold),
-            )
-          ],
+        itemBuilder: (context, index) => Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            children: [
+              // --- Categories Frame ---
+              Container(
+                  width: 50,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: lightColor200,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 5,
+                          offset: const Offset(5, 5))
+                    ],
+                  ),
+                  // --- Categories Icon ---
+                  child: TextButton(
+                      onPressed: () {},
+                      child: Image(
+                          width: 40,
+                          height: 40,
+                          image: AssetImage(controller.dataImage[index])))),
+              const SizedBox(height: 5.0),
+              // --- Categories Title ---
+              Text(
+                controller.dataTitle[index],
+                style: const TextStyle(
+                    color: blueAccent, fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
         ),
       ),
     );

@@ -5,22 +5,34 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyTextTheme {
   static TextTheme lightVarelaRound = TextTheme(
+    // --- Headline ---
       headlineMedium: GoogleFonts.varelaRound(
           color: darkColor700,
-          fontSize: txtHeadlineSize,
+          fontSize: txtHeadlineMediumSize,
           fontWeight: FontWeight.bold),
       headlineSmall: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtHeadlineSmallSize,
           fontWeight: FontWeight.bold),
+      // --- Title ---
       titleMedium: GoogleFonts.varelaRound(
           color: darkColor700,
-          fontSize: txtTitleSize,
+          fontSize: txtTitleMediumSize,
           fontWeight: FontWeight.w500),
       titleSmall: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtTitleSmallSize,
           fontWeight: FontWeight.w500),
+      // --- Label
+      labelMedium: GoogleFonts.varelaRound(
+          color: darkColor700,
+          fontSize: txtLabelMediumSize,
+          fontWeight: FontWeight.w500),
+      labelSmall: GoogleFonts.varelaRound(
+          color: darkColor700,
+          fontSize: txtLabelSmallSize,
+          fontWeight: FontWeight.w500),
+      // --- Body ---
       bodyLarge: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtBodyLargeSize,
@@ -35,7 +47,7 @@ class MyTextTheme {
   static TextTheme darkVarelaRound = TextTheme(
       headlineMedium: GoogleFonts.varelaRound(
           color: lightColor500,
-          fontSize: txtHeadlineSize,
+          fontSize: txtHeadlineMediumSize,
           fontWeight: FontWeight.bold),
       headlineSmall: GoogleFonts.varelaRound(
           color: lightColor500,
@@ -43,7 +55,7 @@ class MyTextTheme {
           fontWeight: FontWeight.bold),
       titleMedium: GoogleFonts.varelaRound(
           color: lightColor500,
-          fontSize: txtTitleSize,
+          fontSize: txtTitleMediumSize,
           fontWeight: FontWeight.w500),
       titleSmall: GoogleFonts.varelaRound(
           color: lightColor500,

@@ -1,13 +1,19 @@
 import 'dart:ui';
 
 
-const double txtHeadlineSize = 30.0;
-const double txtHeadlineSmallSize = 27.0;
-const double txtTitleSize = 25.0;
-const double txtTitleSmallSize = 22.0;
-const double txtBodyLargeSize = 17.0;
-const double txtBodySize = 15.0;
-const double txtBodySmallSize = 12.0;
+const double txtHeadlineMediumSize = 27.0;
+const double txtHeadlineSmallSize = 24.0;
+
+const double txtTitleMediumSize = 22.0;
+const double txtTitleSmallSize = 19.0;
+
+const double txtLabelMediumSize = 15.0;
+const double txtLabelSmallSize = 12.0;
+
+const double txtBodyLargeSize = 14.0;
+const double txtBodySize = 11.0;
+const double txtBodySmallSize = 8.0;
+
 const double txtDefaultSize = 17.0;
 
 const double imgSplashScreenBlobSize = 150.0;

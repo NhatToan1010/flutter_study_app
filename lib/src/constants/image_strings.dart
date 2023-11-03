@@ -37,8 +37,10 @@ const String icGraphicDesign = "assets/icons/ic_graphic_design.png";
 const String icArtificialIntelligence = "assets/icons/ic_artificial_intelligence.png";
 
 // Courses
-const String imgCoursePython = "assets/images/courses/img_introduction_to_python";
-const String imgCourseFlutter = "assets/images/courses/img_introduction_to_flutter";
-const String imgCourseArchitecture = "assets/images/courses/img_introduction_to_architecture_design";
+const String imgCoursePython = "assets/images/courses/img_introduction_to_python.png";
+const String imgCourseFlutter = "assets/images/courses/img_introduction_to_flutter.png";
+const String imgCourseArchitecture = "assets/images/courses/img_introduction_to_architecture_design.png";
+const String imgCourseCoding = "assets/images/courses/img_coding.png";
+const String imgCourseDesigning = "assets/images/courses/img_designing.png";
 
 
