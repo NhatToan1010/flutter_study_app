@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyTextTheme {
   static TextTheme lightVarelaRound = TextTheme(
-    // --- Headline ---
+      // --- Headline ---
       headlineMedium: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtHeadlineMediumSize,
@@ -23,22 +23,22 @@ class MyTextTheme {
           color: darkColor700,
           fontSize: txtTitleSmallSize,
           fontWeight: FontWeight.w500),
-      // --- Label
+      // --- Label ---
       labelMedium: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtLabelMediumSize,
-          fontWeight: FontWeight.w500),
+          fontWeight: FontWeight.bold),
       labelSmall: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtLabelSmallSize,
-          fontWeight: FontWeight.w500),
+          fontWeight: FontWeight.bold),
       // --- Body ---
       bodyLarge: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtBodyLargeSize,
           fontWeight: FontWeight.w500),
-      bodyMedium:
-          GoogleFonts.varelaRound(color: darkColor700, fontSize: txtBodySize),
+      bodyMedium: GoogleFonts.varelaRound(
+          color: darkColor700, fontSize: txtBodyMediumSize),
       bodySmall: GoogleFonts.varelaRound(
           color: darkColor700,
           fontSize: txtBodySmallSize,
@@ -61,6 +61,6 @@ class MyTextTheme {
           color: lightColor500,
           fontSize: txtTitleSmallSize,
           fontWeight: FontWeight.w500),
-      bodyMedium:
-          GoogleFonts.varelaRound(color: lightColor500, fontSize: txtBodySize));
+      bodyMedium: GoogleFonts.varelaRound(
+          color: lightColor500, fontSize: txtBodyMediumSize));
 }

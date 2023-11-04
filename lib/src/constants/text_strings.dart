@@ -11,16 +11,24 @@ const String txtPassword = "Password";
 const String txtConfirmPassword = "Confirm Password";
 const String txtContinue = "Continue";
 const String txtResend = "Resend";
+const String txtSeeMore = "See More";
+
 const String txtPython = "Python";
 const String txtJava = "Java";
 const String txtFlutter = "Flutter";
 const String txtGraphicDesign = "Design";
 const String txtArtificialIntelligence = "A.I";
-const String txtLessons = " Lessons";
-const String txtWeeks = " Weeks, ";
+
+const String txtLessons = "Lessons";
+const String txtWeeks = " Weeks";
+const String txtHours = "hours";
+const String txtReviews = "Reviews";
 const String txtBeginner = "Beginner";
 const String txtInternship = "Internship";
 const String txtExpert = "Expert";
+const String txtFree = "Free";
+
+const String txtLorem = "Lorem ipsum dolor sit amet consecrate. Premium tells sit amet ";
 
 // Courses
 const String txtCoursePython = "Introduction to Python";

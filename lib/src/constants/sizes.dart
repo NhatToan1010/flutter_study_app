@@ -10,9 +10,9 @@ const double txtTitleSmallSize = 19.0;
 const double txtLabelMediumSize = 15.0;
 const double txtLabelSmallSize = 12.0;
 
-const double txtBodyLargeSize = 14.0;
-const double txtBodySize = 11.0;
-const double txtBodySmallSize = 8.0;
+const double txtBodyLargeSize = 15.0;
+const double txtBodyMediumSize = 12.0;
+const double txtBodySmallSize = 11.0;
 
 const double txtDefaultSize = 17.0;
 
