@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class OnboardingModel {
   final String background;
   final String image;

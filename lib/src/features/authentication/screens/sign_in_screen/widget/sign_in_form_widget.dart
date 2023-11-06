@@ -3,8 +3,8 @@ import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/constants/sizes.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/forgot_password_email_option.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/forgot_password_selection_widget.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/sign_in_screen/sign_in_form_widget.dart';
+import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/widget/forgot_password_selection_widget.dart';
+import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
 import 'package:flutter_study_app/src/utils/widget/fill_in_textfield_widget.dart';
 import 'package:flutter_study_app/src/utils/widget/model/fill_in_textfield_model.dart';
 import 'package:flutter_study_app/src/utils/widget/title_widget.dart';
@@ -93,7 +93,7 @@ class SignInFormWidget extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(const DashBoard()),
                 child: Text(
                   txtSignIn.toUpperCase(),
                 )),

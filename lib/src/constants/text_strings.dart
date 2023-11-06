@@ -33,6 +33,7 @@ const String txtLorem = "Lorem ipsum dolor sit amet consecrate. Premium tells si
 // Courses
 const String txtCoursePython = "Introduction to Python";
 const String txtCourseFlutter = "Introduction to Flutter";
+const String txtCourseJava = "Introduction to Java";
 const String txtCourseArchitecture = "Architecture Design";
 
 //Splash Screen

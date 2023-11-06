@@ -30,7 +30,7 @@ class CategoriesWidget extends StatelessWidget {
                   height: 60,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
-                    color: lightColor700,
+                    color: whiteColor,
                     boxShadow: [
                       BoxShadow(
                           color: Colors.black.withOpacity(0.1),
