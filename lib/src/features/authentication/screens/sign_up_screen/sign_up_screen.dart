@@ -3,8 +3,8 @@ import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/constants/sizes.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/authenticationBackground.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/sign_up_screen/sign_up_decision_widget.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/sign_up_screen/sign_up_form_widget.dart';
+import 'package:flutter_study_app/src/features/authentication/screens/sign_up_screen/widget/sign_up_decision_widget.dart';
+import 'package:flutter_study_app/src/features/authentication/screens/sign_up_screen/widget/sign_up_form_widget.dart';
 import 'package:flutter_study_app/src/utils/animation/design/gradual_clear_animation_design.dart';
 import 'package:flutter_study_app/src/utils/widget/title_widget.dart';
 

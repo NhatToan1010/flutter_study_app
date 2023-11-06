@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/sign_in_screen/sign_in_screen.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
-import 'package:flutter_study_app/src/features/home/screens/dashboard/DashBoard.dart';
+import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
 import 'package:flutter_study_app/src/utils/themes/theme.dart';
 import 'package:get/get.dart';
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       defaultTransition: Transition.leftToRightWithFade,
       debugShowCheckedModeBanner: false,
-      home: const DashBoard(),
+      home: const SplashScreen(),
     );
   }
 }

@@ -25,3 +25,6 @@ const darkBlue = Color(0xFF0022BA);
 
 const greenColor = Color(0xFF57A831);
 const yellowColor = Color(0xFFF5C751);
+const yellowGolden = Color(0xFFFFD233);
+
+const lightBg = Color(0xFFF3DDDD);

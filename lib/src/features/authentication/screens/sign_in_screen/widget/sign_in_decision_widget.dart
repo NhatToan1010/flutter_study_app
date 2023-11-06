@@ -3,7 +3,7 @@ import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/constants/image_strings.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/models/sign_in_option_model.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/sign_in_screen/option_sign_in_widget.dart';
+import 'package:flutter_study_app/src/features/authentication/screens/sign_in_screen/widget/option_sign_in_widget.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';

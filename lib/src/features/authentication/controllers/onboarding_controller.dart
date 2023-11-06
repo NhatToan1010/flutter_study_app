@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_study_app/src/constants/image_strings.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/models/onboarding_model.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/onboarding_screen/onboarding_page_widget.dart';
-import 'package:flutter_study_app/src/features/authentication/screens/welcome_screen/welcome_screen.dart';
+import 'package:flutter_study_app/src/features/authentication/screens/onboarding_screen/widget/onboarding_page_widget.dart';
 import 'package:get/get.dart';
 import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 
