@@ -3,6 +3,7 @@ import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/appbar.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/banner_widget.dart';
+import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/bottom_navigation_bar.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/categories_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/header_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/popular_courses_widget.dart';
@@ -38,41 +39,8 @@ class DashBoard extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: whiteColor,
-        type: BottomNavigationBarType.fixed,
-        fixedColor: blueAccent,
-        items: [
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () => Get.to(const DashBoard()),
-                icon: const Icon(Icons.home_outlined),
-                splashRadius: 1,
-              ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () => Get.to(OnboardingScreen()),
-                icon: const Icon(Icons.play_lesson_outlined),
-                splashRadius: 1,
-              ),
-              label: "Courses"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.notifications_none_outlined),
-                splashRadius: 1,
-              ),
-              label: "News"),
-          BottomNavigationBarItem(
-              icon: IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.person_outline_rounded),
-                splashRadius: 1,
-              ),
-              label: "Profile"),
-        ],
-      ),
+      bottomNavigationBar: const DashBoardBottomNavigationBar(),
     );
   }
 }
+
