@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       defaultTransition: Transition.leftToRightWithFade,
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const DashBoard(),
     );
   }
 }

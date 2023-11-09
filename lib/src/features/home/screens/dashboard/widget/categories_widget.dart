@@ -2,7 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/constants/colors.dart';
-import 'package:flutter_study_app/src/features/home/controllers/dashboard/CategoriesController.dart';
+import 'package:flutter_study_app/src/features/home/controllers/dashboard/categories_controller.dart';
+import 'package:flutter_study_app/src/features/home/models/dashboard/categories_model.css.dart';
 import 'package:get/get.dart';
 
 class CategoriesWidget extends StatelessWidget {
@@ -19,7 +20,7 @@ class CategoriesWidget extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         physics: const ClampingScrollPhysics(),
-        itemCount: controller.dataTitle.length,
+        itemCount: controller.list.length,
         itemBuilder: (context, index) => Container(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: Column(
@@ -44,11 +45,11 @@ class CategoriesWidget extends StatelessWidget {
                       child: Image(
                           width: 40,
                           height: 40,
-                          image: AssetImage(controller.dataImage[index])))),
+                          image: AssetImage(controller.list[index].image)))),
               const SizedBox(height: 5.0),
               // --- Categories Title ---
               Text(
-                controller.dataTitle[index],
+                controller.list[index].title,
                 style: const TextStyle(
                     color: blueAccent, fontWeight: FontWeight.bold),
               )

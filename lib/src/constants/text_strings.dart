@@ -28,7 +28,10 @@ const String txtInternship = "Internship";
 const String txtExpert = "Expert";
 const String txtFree = "Free";
 
-const String txtLorem = "Lorem ipsum dolor sit amet consecrate. Premium tells sit amet ";
+const String txtLorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                        "Proin ac odio a eros suscipit facilisis. Nulla ipsum tortor, "
+                        "vehicula laoreet lorem id, sollicitudin dapibus sapien. "
+                        "Etiam ligula orci, porta et tempor in, luctus sed nulla.";
 
 // Courses
 const String txtCoursePython = "Introduction to Python";
