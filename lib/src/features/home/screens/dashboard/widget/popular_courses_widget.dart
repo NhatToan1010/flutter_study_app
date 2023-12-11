@@ -28,9 +28,12 @@ class PopularCoursesWidget extends StatelessWidget {
               txtPopularCourses,
               style: txtTheme.titleSmall,
             ),
-            Text(
-              txtViewAll,
-              style: txtTheme.labelMedium?.apply(color: blueAccent),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                txtViewAll,
+                style: txtTheme.labelMedium?.apply(color: blueAccent),
+              ),
             )
           ],
         ),
@@ -107,7 +110,7 @@ class PopularCoursesWidget extends StatelessWidget {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          // --- Lessons & Time
+                          // --- Lessons & Time ---
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
