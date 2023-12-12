@@ -18,6 +18,8 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   liquid_swipe: ^3.1.0
   otp_timer_button: ^1.1.0
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.2
 
 dev_dependencies:
   flutter_test:

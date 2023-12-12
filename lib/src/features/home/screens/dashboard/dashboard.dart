@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/appbar.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/banner_widget.dart';
+import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/bottom_navigation_bar.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/categories_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/header_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/widget/popular_courses_widget.dart';
@@ -35,11 +36,9 @@ class DashBoard extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const DashBoardBottomNavigationBar(),
 
     );
   }
 }
-
-
-
 
