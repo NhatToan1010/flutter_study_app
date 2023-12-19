@@ -1,6 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/controllers/sign_up_controller.dart';
+import 'package:flutter_study_app/src/features/authentication/models/user_model.dart';
+import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
 import 'package:flutter_study_app/src/utils/widget/fill_in_textfield_widget.dart';
 import 'package:flutter_study_app/src/utils/widget/model/fill_in_textfield_model.dart';
 import 'package:get/get.dart';
@@ -30,7 +33,10 @@ class SignUpForm extends StatelessWidget {
               border: const OutlineInputBorder(),
               label: Text(
                 txtEmail,
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .bodySmall,
               ),
             ),
           ),
@@ -43,7 +49,10 @@ class SignUpForm extends StatelessWidget {
               border: const OutlineInputBorder(),
               label: Text(
                 txtUsername,
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .bodySmall,
               ),
             ),
           ),
@@ -51,13 +60,17 @@ class SignUpForm extends StatelessWidget {
           /* --- Password Fill in --- */
           TextFormField(
             controller: controller.password,
+            obscureText: true,
             decoration: InputDecoration(
               prefixIcon: const Icon(Icons.lock_outline_rounded),
               suffixIcon: const Icon(Icons.remove_red_eye_rounded),
               border: const OutlineInputBorder(),
               label: Text(
                 txtPassword,
-                style: Theme.of(context).textTheme.bodySmall,
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .bodySmall,
               ),
             ),
           ),
@@ -75,8 +88,13 @@ class SignUpForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
                 onPressed: () {
-                  if(formKey.currentState!.validate()){
-                    SignUpController.instance.registerUser(controller.email.text.trim().toString(), controller.password.text.trim().toString());
+                  final UserModel user = UserModel(
+                      userName: controller.userName.text.trim(),
+                      email: controller.email.text.trim(),
+                      password: controller.password.text.trim());
+                  if (formKey.currentState!.validate()) {
+                    SignUpController.instance.createUser(user);
+                    Get.offAll(const DashBoard());
                   }
                 },
                 child: Text(

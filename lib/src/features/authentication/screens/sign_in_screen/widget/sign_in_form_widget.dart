@@ -5,6 +5,7 @@ import 'package:flutter_study_app/src/constants/text_strings.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/forgot_password_email_option.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/widget/forgot_password_selection_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
+import 'package:flutter_study_app/src/features/home/screens/profile/profile_screen.dart';
 import 'package:flutter_study_app/src/utils/widget/fill_in_textfield_widget.dart';
 import 'package:flutter_study_app/src/utils/widget/model/fill_in_textfield_model.dart';
 import 'package:flutter_study_app/src/utils/widget/title_widget.dart';
@@ -22,22 +23,32 @@ class SignInFormWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          /* --- Email/Username Fill in --- */
-          FillInTextField(
-              model: FillInTextFieldModel(
-                  keyboardType: TextInputType.emailAddress,
-                  title: txtEmailUsername,
-                  prefixIcon: Icons.person)),
+          /* --- Email Fill in --- */
+          TextFormField(
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.email_outlined),
+              border: const OutlineInputBorder(),
+              label: Text(
+                txtEmail,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ),
+          ),
           const SizedBox(height: 10.0),
           /* --- Password Fill in --- */
-          FillInTextField(
-              model: FillInTextFieldModel(
-                  keyboardType: TextInputType.visiblePassword,
-                  title: txtPassword,
-                  prefixIcon: Icons.lock_outline_rounded,
-                  suffixIcon: Icons.remove_red_eye_rounded)),
-          const SizedBox(height: 10.0),
-          /* --- Forgot Password check ---*/
+          TextFormField(
+            obscureText: true,
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.lock_outline_rounded),
+              suffixIcon: const Icon(Icons.remove_red_eye_rounded),
+              border: const OutlineInputBorder(),
+              label: Text(
+                txtPassword,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ),
+          ),
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
