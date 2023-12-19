@@ -3,6 +3,7 @@ import 'dart:ui';
 // Generic
 const String txtSignIn = "Sign-In";
 const String txtSignUp = "Sign Up";
+const String txtLogout = "Logout";
 const String txtPhoneNo = "Phone No";
 const String txtEmail = "Email";
 const String txtUsername = "Username";
@@ -12,6 +13,7 @@ const String txtConfirmPassword = "Confirm Password";
 const String txtContinue = "Continue";
 const String txtResend = "Resend";
 const String txtSeeMore = "See More";
+const String txtName = "James Brown";
 
 const String txtPython = "Python";
 const String txtJava = "Java";
@@ -23,6 +25,7 @@ const String txtLessons = "Lessons";
 const String txtWeeks = " Weeks";
 const String txtHours = "hours";
 const String txtReviews = "Reviews";
+
 const String txtBeginner = "Beginner";
 const String txtInternship = "Internship";
 const String txtExpert = "Expert";
@@ -88,8 +91,21 @@ const String txtSignUpFooter = "Already have an Account?  ";
 
 // Dash Board Screen
 const String txtLabel = "\\/iktor";
-const String txtGreeting = "Hello James,";
+const String txtGreeting = "Welcome back,";
 const String txtSubGreeting = "What will you discover today?";
 const String txtSearch = "Search Course";
 const String txtPopularCourses = "Popular Courses";
 const String txtViewAll = "View All";
+
+// Profile Screen
+const String txtProfile = "Profile";
+const String txtEditProfile = "Edit $txtProfile";
+const String txtSettings = "Settings";
+const String txtAccountSettings = "Account $txtSettings";
+const String txtSystemSettings = "System $txtSettings";
+const String txtUserInformation = "User Information";
+const String txtViewInfo = "Information";
+const String txtViewProgress = "Progress";
+const String txtUpgradePlan = "Upgrade Your Plan";
+const String txtSeeMoreOptions = "See More Options";
+const String txtChooseYourPlan = "Choose Your Plan";

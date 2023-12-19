@@ -1,5 +1,18 @@
 import 'dart:ui';
 
+//---Icons
+const String icGoogle = "assets/icons/ic_google.png";
+const String icFacebook = "assets/icons/ic_facebook.png";
+const String icLinkedin = "assets/icons/ic_linkedin.png";
+const String icEmail = "assets/icons/ic_email.png";
+const String icPassword = "assets/icons/ic_password.png";
+const String icShowPassword = "assets/icons/ic_show_password.png";
+const String icPython = "assets/icons/ic_python.png";
+const String icJava = "assets/icons/ic_java.png";
+const String icFlutter = "assets/icons/ic_flutter.png";
+const String icGraphicDesign = "assets/icons/ic_graphic_design.png";
+const String icArtificialIntelligence = "assets/icons/ic_artificial_intelligence.png";
+
 //Splash Screen
 const  String imgSplashScreenBlob1 = "assets/images/splash_screen/splash_screen_blob1.png";
 const  String imgSplashScreenBlob2 = "assets/images/splash_screen/splash_screen_blob2.png";
@@ -23,20 +36,7 @@ const String imgWelcomeScreenImage = "assets/images/welcome_screen/welcome_scree
 //Sign-In Screen
 const String imgForgotPassword = "assets/images/sign_in_screen/img_forgot_password.png";
 
-// Icons
-const String icGoogle = "assets/icons/ic_google.png";
-const String icFacebook = "assets/icons/ic_facebook.png";
-const String icLinkedin = "assets/icons/ic_linkedin.png";
-const String icEmail = "assets/icons/ic_email.png";
-const String icPassword = "assets/icons/ic_password.png";
-const String icShowPassword = "assets/icons/ic_show_password.png";
-const String icPython = "assets/icons/ic_python.png";
-const String icJava = "assets/icons/ic_java.png";
-const String icFlutter = "assets/icons/ic_flutter.png";
-const String icGraphicDesign = "assets/icons/ic_graphic_design.png";
-const String icArtificialIntelligence = "assets/icons/ic_artificial_intelligence.png";
-
-// Courses
+//Courses
 const String imgCoursePython = "assets/images/courses/img_introduction_to_python.jpg";
 const String imgCourseFlutter = "assets/images/courses/img_introduction_to_flutter.jpg";
 const String imgCourseJava = "assets/images/courses/img_introduction_to_java.jpeg";
@@ -44,4 +44,6 @@ const String imgCourseArchitecture = "assets/images/courses/img_introduction_to_
 const String imgCourseCoding = "assets/images/courses/img_coding.png";
 const String imgCourseDesigning = "assets/images/courses/img_designing.png";
 
+//Profile Screen
+const String imgAvatar1 = "assets/images/profile/img_avatar1.jpg";
 
