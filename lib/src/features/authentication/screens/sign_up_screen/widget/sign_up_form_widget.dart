@@ -75,13 +75,6 @@ class SignUpForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10.0),
-          /* --- Confirm password Fill in --- */
-          FillInTextField(
-              model: FillInTextFieldModel(
-                  keyboardType: TextInputType.visiblePassword,
-                  title: txtConfirmPassword,
-                  prefixIcon: Icons.check_circle_outline_rounded,
-                  suffixIcon: Icons.remove_red_eye_rounded)),
           const SizedBox(height: 20.0),
           /* --- Button Sign Up --- */
           SizedBox(
