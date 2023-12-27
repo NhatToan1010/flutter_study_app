@@ -48,15 +48,15 @@ class ProfileScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // --- Avatar & Edit Button ---
+              /* --- Avatar & Edit Button --- */
               AvatarWidget(txtTheme: txtTheme),
               const SizedBox(height: 30.0),
               const Divider(),
               const SizedBox(height: 10.0),
-              // --- Features ---
+              /* --- Features --- */
               FeaturesWidget(txtTheme: txtTheme),
               const SizedBox(height: 30.0),
-              // --- Logout Button ---
+              /* --- Logout Button --- */
               LogoutButtonWidget(size: size, txtTheme: txtTheme)
             ],
           ),

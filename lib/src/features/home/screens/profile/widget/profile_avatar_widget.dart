@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/constants/image_strings.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
+import 'package:flutter_study_app/src/features/home/screens/profile/update_profile_screen.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:ionicons/ionicons.dart';
 
 class AvatarWidget extends StatelessWidget {
@@ -73,7 +76,7 @@ class AvatarWidget extends StatelessWidget {
         ),
         // --- Edit Profile Button ---
         ElevatedButton(
-            onPressed: () {},
+            onPressed: () => Get.to(const UpdateProfileScreen()),
             style: ElevatedButton.styleFrom(
                 backgroundColor: blueAccent,
                 foregroundColor: lightColor500,

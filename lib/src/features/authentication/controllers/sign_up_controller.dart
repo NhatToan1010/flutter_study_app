@@ -13,10 +13,10 @@ class SignUpController extends GetxController {
   final userName = TextEditingController();
 
   final userRepo = Get.put(UserRepository());
+  final userAuth = Get.put(AuthenticationRepository());
 
   void createUser(UserModel user) {
     userRepo.createUser(user);
-    AuthenticationRepository.instance
-        .createUserWithEmailAndPassword(user.email, user.password);
+    userAuth.createUserWithEmailAndPassword(user.email, user.password);
   }
 }

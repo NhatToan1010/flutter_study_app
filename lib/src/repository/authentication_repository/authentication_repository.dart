@@ -11,6 +11,7 @@ class AuthenticationRepository extends GetxController {
   final auth = FirebaseAuth.instance;
   late final Rx<User?> firebaseUser;
 
+  // --- Set up when User start Application ---
   @override
   void onReady() {
     Future.delayed(const Duration(seconds: 5));

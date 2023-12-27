@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
+import 'package:flutter_study_app/src/features/home/screens/profile/profile_screen.dart';
 import 'package:get/get.dart';
 
 class DashBoardBottomNavigationBar extends StatelessWidget {
@@ -38,7 +39,7 @@ class DashBoardBottomNavigationBar extends StatelessWidget {
             label: "News"),
         BottomNavigationBarItem(
             icon: IconButton(
-              onPressed: () {},
+              onPressed: () => Get.to(const ProfileScreen()),
               icon: const Icon(Icons.person_outline_rounded),
               splashRadius: 1,
             ),
