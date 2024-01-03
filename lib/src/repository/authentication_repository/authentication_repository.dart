@@ -21,10 +21,11 @@ class AuthenticationRepository extends GetxController {
   }
 
   setInitialScreen(User? user) {
-    user == null
-        ? Get.offAll(() => const WelcomeScreen())
+    user == null ? Get.offAll(() => const WelcomeScreen())
         : Get.offAll(() => const DashBoard());
   }
+
+  /* --- Email & Password Sign-In Sign Up Feature --- */
 
   // Sign Up Feature
   Future<void> createUserWithEmailAndPassword(
@@ -56,5 +57,6 @@ class AuthenticationRepository extends GetxController {
     } catch (_) {}
   }
 
+  // Logout Feature
   Future<void> logout() async => auth.signOut();
 }

@@ -24,6 +24,19 @@ class SignUpForm extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          /* --- FullName Fill in --- */
+          TextFormField(
+            controller: controller.fullName,
+            decoration: InputDecoration(
+              prefixIcon: const Icon(Icons.person_2_outlined),
+              border: const OutlineInputBorder(),
+              label: Text(
+                txtFullName,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ),
+          ),
+          const SizedBox(height: 10.0),
           /* --- Email Fill in --- */
           TextFormField(
             controller: controller.email,
@@ -33,10 +46,7 @@ class SignUpForm extends StatelessWidget {
               border: const OutlineInputBorder(),
               label: Text(
                 txtEmail,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodySmall,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ),
@@ -49,10 +59,7 @@ class SignUpForm extends StatelessWidget {
               border: const OutlineInputBorder(),
               label: Text(
                 txtUsername,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodySmall,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ),
@@ -67,10 +74,7 @@ class SignUpForm extends StatelessWidget {
               border: const OutlineInputBorder(),
               label: Text(
                 txtPassword,
-                style: Theme
-                    .of(context)
-                    .textTheme
-                    .bodySmall,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ),
@@ -83,7 +87,8 @@ class SignUpForm extends StatelessWidget {
                   final UserModel user = UserModel(
                       userName: controller.userName.text.trim(),
                       email: controller.email.text.trim(),
-                      password: controller.password.text.trim());
+                      password: controller.password.text.trim(),
+                      fullName: controller.fullName.text.trim());
                   if (formKey.currentState!.validate()) {
                     controller.createUser(user);
                   }

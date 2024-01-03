@@ -7,6 +7,7 @@ const String txtLogout = "Logout";
 const String txtPhoneNo = "Phone No";
 const String txtEmail = "Email";
 const String txtUsername = "Username";
+const String txtFullName = "FullName";
 const String txtEmailUsername = "Email / Username";
 const String txtPassword = "Password";
 const String txtConfirmPassword = "Confirm Password";
