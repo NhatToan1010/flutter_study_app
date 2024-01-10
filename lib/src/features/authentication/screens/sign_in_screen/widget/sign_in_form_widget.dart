@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_study_app/src/constants/colors.dart';
 import 'package:flutter_study_app/src/constants/sizes.dart';
 import 'package:flutter_study_app/src/constants/text_strings.dart';
+import 'package:flutter_study_app/src/features/authentication/controllers/sign_in_controller.dart';
+import 'package:flutter_study_app/src/features/authentication/models/user_model.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/forgot_password_email_option.dart';
 import 'package:flutter_study_app/src/features/authentication/screens/forgot_password/widget/forgot_password_selection_widget.dart';
 import 'package:flutter_study_app/src/features/home/screens/dashboard/dashboard.dart';
-import 'package:flutter_study_app/src/features/home/screens/profile/profile_screen.dart';
-import 'package:flutter_study_app/src/utils/widget/fill_in_textfield_widget.dart';
-import 'package:flutter_study_app/src/utils/widget/model/fill_in_textfield_model.dart';
 import 'package:flutter_study_app/src/utils/widget/title_widget.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,12 +18,17 @@ class SignInFormWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignInController());
+    final formKey = GlobalKey<FormState>();
+
     return Form(
+      key: formKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           /* --- Email Fill in --- */
           TextFormField(
+            controller: controller.email,
             keyboardType: TextInputType.emailAddress,
             decoration: InputDecoration(
               prefixIcon: const Icon(Icons.email_outlined),
@@ -38,6 +42,7 @@ class SignInFormWidget extends StatelessWidget {
           const SizedBox(height: 10.0),
           /* --- Password Fill in --- */
           TextFormField(
+            controller: controller.password,
             obscureText: true,
             decoration: InputDecoration(
               prefixIcon: const Icon(Icons.lock_outline_rounded),
@@ -49,6 +54,7 @@ class SignInFormWidget extends StatelessWidget {
               ),
             ),
           ),
+          /* --- Forgot Password Button --- */
           Align(
             alignment: Alignment.centerRight,
             child: TextButton(
@@ -104,7 +110,13 @@ class SignInFormWidget extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () => Get.to(const DashBoard()),
+                onPressed: () {
+                  final email = controller.email.text.trim();
+                  final password = controller.password.text.trim();
+                  if (formKey.currentState!.validate()) {
+                    controller.loginUser(email, password);
+                  }
+                },
                 child: Text(
                   txtSignIn.toUpperCase(),
                 )),
