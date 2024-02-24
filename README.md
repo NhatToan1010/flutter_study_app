@@ -1,6 +1,7 @@
 # flutter_study_app
 
-A new Flutter project.
+A Flutter Study Application exemple for practice UI/UX coding, the project also uses Firebase for authentication and fetch data features.
+Buitlt and Developed by Nguyen Tu Nhat Toan.
 
 ## Getting Started
 
